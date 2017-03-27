@@ -1,38 +1,20 @@
 package com.riotgames.sample;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
 
 /**
  * Unit test for simple CalcApp.
  */
-public class CalcAppTest
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public CalcAppTest(String testName )
-    {
-        super( testName );
-    }
+public class CalcAppTest {
+    @Test
+    public void testCalcAppDoesCorrectAddOperation() {
+        String[] args = new String[] { "1", "+", "2" };
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( CalcAppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+        CalcApp app = new CalcApp();
+        double result = app.calc(args);
+        assertThat(result, is(3.0));
     }
 }
