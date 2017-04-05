@@ -2,6 +2,7 @@ package com.riotgames.sample;
 
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 
 public boolean isAnOperator(Object s) {
@@ -9,6 +10,9 @@ public boolean isAnOperator(Object s) {
 			return true;
 		return false;
 	}
+
+
+
 
 /**
  * Calculator application
