@@ -3,6 +3,13 @@ package com.riotgames.sample;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+
+public boolean isAnOperator(Object s) {
+		if (s.equals("+") || s.equals("-") || s.equals("*") || s.equals("/"))
+			return true;
+		return false;
+	}
+
 /**
  * Calculator application
  */
