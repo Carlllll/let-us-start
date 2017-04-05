@@ -27,6 +27,5 @@ public class CalcApp {
         Arrays.asList(args).forEach(value -> outputs.append(value + " "));
         System.out.print( "Addition of values: " + outputs + " = ");
         System.out.println(app.calc(args));
-        System.out.println("Hello");
     }
 }
