@@ -11,7 +11,7 @@ import static org.hamcrest.Matchers.is;
 public class CalcAppTest {
     @Test
     public void testCalcAppDoesCorrectAddOperation() {
-        String[] args = new String[] { "1", "?", "2" };
+        String[] args = new String[] { "1", "+", "2" };
 
         CalcApp app = new CalcApp();
         double result = app.calc(args);
