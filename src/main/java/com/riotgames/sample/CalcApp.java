@@ -2,16 +2,6 @@ package com.riotgames.sample;
 
 import java.util.Arrays;
 import java.util.ArrayList;
-import java.util.Scanner;
-
-
-public boolean isAnOperator(Object s) {
-		if (s.equals("+") || s.equals("-") || s.equals("*") || s.equals("/"))
-			return true;
-		return false;
-	}
-
-
 
 
 /**
